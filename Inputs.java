@@ -6,5 +6,6 @@ public class Inputs{
             int rollno = input.nextInt();
             System.out.println("your rollno is: " + rollno);
         }
+
+        }
     }
-}
