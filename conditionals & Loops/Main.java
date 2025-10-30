@@ -5,6 +5,9 @@ public class Main {
         if(salary > 60000){
             salary = salary + 2000;
         }
+        else if(salary == 60000){
+            salary = salary + 1500;
+        }
         else{
             salary = salary + 1000;
         }
