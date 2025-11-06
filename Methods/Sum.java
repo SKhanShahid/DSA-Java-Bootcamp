@@ -1,7 +1,7 @@
+package Methods;
 import java.util.Scanner;
 public class Sum{
     public static void main(String[] args) {
-        sumTwoNumbers();
         sumTwoNumbers();
     }
     static void sumTwoNumbers() {
