@@ -1,5 +1,5 @@
 //parameters 
-import java.util.Scanner;
+
 public class Sum2{
     public static void main(String[] args) {
         int ans = sum3(5, 10);
