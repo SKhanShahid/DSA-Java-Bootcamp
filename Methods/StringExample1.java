@@ -8,8 +8,8 @@ public class StringExample1{
         System.out.println(info);
         sc.close();
     }
-    static String myGreet(String name) {
-        String greeting = "Hello, " + name + "! Welcome to the Java programming world.";
+    static String myGreet(String naam) {
+        String greeting = "Hello, " + naam + "! Welcome to the Java programming world.";
         return greeting;
     }
 }
