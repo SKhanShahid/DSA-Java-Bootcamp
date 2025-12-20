@@ -12,8 +12,9 @@ public class Main{
                 return -1;
             }
             for(int index = 0; index < arr.length; index++){
-                if(arr[index] == target){
-                    return index;
+                int Element = arr[index];
+                if(Element == target){
+                    return Element;
                 }
             }
             return -1;
