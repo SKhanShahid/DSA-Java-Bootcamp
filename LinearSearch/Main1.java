@@ -1,7 +1,7 @@
 public class Main1{
     public static void main(String[] args){
-        int nums[] = {1,2,3,4,5,88,55};
-        int target = 4;
+        int nums[] = {1,2,3,4,5,88,-1,55};
+        int target = -3;
         System.out.print(LinearSearch2(nums,target));
     }
 
@@ -15,6 +15,8 @@ public class Main1{
                 return element;
             }
         }
-        return -1;
+        return Integer.MAX_VALUE; // other than just return -1; 
+        //we can find the -ve value in the array by this function Integer.MAX_VALUE;
+        
     }
 }
