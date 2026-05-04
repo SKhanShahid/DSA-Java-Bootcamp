@@ -1,11 +1,11 @@
-public class ceiling1{
+public class Floor{
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18,20};
         int target = 4;
-        int ans = CeilingBinarySearch(arr, target);
+        int ans = FloorBinarySearch(arr, target);
         System.out.println(ans);
         }
-         static int CeilingBinarySearch(int[] arr, int target){
+         static int FloorBinarySearch(int[] arr, int target){
             if(arr.length == 0){
                 return -1;
             }
@@ -23,7 +23,7 @@ public class ceiling1{
                     start = mid+1;
                 }
             }
-            return arr[start];
+            return arr[end];
            
         
     }
