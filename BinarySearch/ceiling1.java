@@ -1,12 +1,14 @@
 public class ceiling1{
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18,20};
-        int target = 4;
+        int target = 15;
         int ans = CeilingBinarySearch(arr, target);
         System.out.println(ans);
         }
+        //return the index of the smallest no.>= target
          static int CeilingBinarySearch(int[] arr, int target){
-            if(arr.length == 0){
+            //but what if the target is greater than the greatest number in the array
+            if(target > arr[arr.length-1]){
                 return -1;
             }
             int start = 0;
@@ -23,7 +25,7 @@ public class ceiling1{
                     start = mid+1;
                 }
             }
-            return arr[start];
+            return start;
            
         
     }
