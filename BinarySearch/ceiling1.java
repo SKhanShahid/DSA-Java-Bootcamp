@@ -1,7 +1,7 @@
 public class ceiling1{
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18,20};
-        int target = 15;
+        int target = 1;
         int ans = CeilingBinarySearch(arr, target);
         System.out.println(ans);
         }
@@ -16,7 +16,7 @@ public class ceiling1{
             while(start<=end){
                 int mid = start + (end-start)/2;
                 if(target==arr[mid]){
-                    return arr[mid];
+                    return mid;
                 }
                 else if(target<arr[mid]){
                     end = mid-1;
